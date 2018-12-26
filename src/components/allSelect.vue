@@ -20,19 +20,19 @@
 			      				</div> 			      				
 			      			</div>
 			      			<div class="comSize">
-			      				<span class="comSize_tip">员工</span>
+			      				<span class="comSize_tip">姓名</span>
 			      				<span>{{item.username}} </span>
 			      			</div>
 			      			<div class="comSize">
-			      				<span class="comSize_tip">已填工时</span>
+			      				<span class="comSize_tip">序号</span>
 			      				<span>{{item.fact_worktime}}</span>
 			      			</div>
 			      			<div class="comSize">
-			      				<span class="comSize_tip">审核工时</span>
+			      				<span class="comSize_tip">时间</span>
 			      				 <span style="margin-left: 0.28rem;color:#929292">{{item.verify_worktime}}</span> 
 			      		 	</div>
 			      			<div class="comSpan">
-			      				<span class="spanTip">工作内容</span>
+			      				<span class="spanTip">内容</span>
 			      				<span class="spanMain">{{item.content}}</span> 
 			  				</div>
 		  				</div>
@@ -44,9 +44,8 @@
 	      </div> 
 	      <div class="sumbit"> 
 	    		<div class="sum_btn">
-						<button class="sum_left" style="background: #5094f3;color: #FFFFFF;" type="primary" @click="sumbit">提交</button>
-					</div>
-					<div style="width: 100%;height: 0.4rem;background: #f7f7f7;"></div>
+						<button class="sum_left" type="primary" @click="sumbit">提交</button>
+					</div> 
 	    	</div>
     	</div> 
     	
@@ -264,8 +263,7 @@ import {flex} from './flexible.js'
 .projects {
   /*overflow-x: hidden;*/
   position: relative;
-  background: #f7f7f7;
-  height: 13rem;
+  background: #f7f7f7; 
   -webkit-overflow-scrolling: touch;
   width: 100%;
   font-size: 0.26rem;
@@ -328,21 +326,7 @@ import {flex} from './flexible.js'
 	    	.group{
 		    	margin: 0!important; 
 		    }
-    	}
-    	/*.date_tip{
-    		text-indent: 0.34rem;
-    		flex: 1;
-    		-webkit-box-flex: 1;
-    		color: #222222;
-    		font-size: 0.3rem;
-    		line-height: 3;
-    	}
-    	.range{
-    		width: 2.5rem;
     	} 
-	    .group{
-	    	margin: 0!important; 
-	    }*/
     	.confirm{
    			 position: fixed;
    			 left: 0;
@@ -559,19 +543,22 @@ import {flex} from './flexible.js'
 			/*display: flex;
 			display: -webkit-flex;*/ 
 			
-			.sum_btn{  
-				  background: #FFFFFF;
+			.sum_btn{   
+          background: #fff!important;
 				  padding: 0.24rem 0;
 					button{
+            background: #5094f3!important;
+            color: #FFFFFF;
 						border: 0;
 						display: block; 
-					    height: 0.88rem;
-					    width: 5.92rem;
-					    border-radius: 8px; 
-					    background: #f5f5f5;
-					    font-size: 0.36rem; 
-					    text-align: center;
-					    margin: 0 auto;
+            height: 0.88rem;
+            width: 5.92rem;
+            border-radius: 8px; 
+            background: #f5f5f5;
+            font-size: 0.36rem; 
+            text-align: center;
+            margin: 0 auto;
+            outline: none;
 					    
 					} 
 			}			
