@@ -1,6 +1,6 @@
 # allselect
 
-> A Vue.js project
+> 实现全选的小功能
 
 ## Build Setup
 
