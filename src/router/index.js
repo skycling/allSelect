@@ -8,12 +8,12 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/allSelect',
       name: 'allSelect',
       component: allSelect
     },
     {
-      path: '/index',
+      path: '/',
       name: 'index',
       component: index
     }
