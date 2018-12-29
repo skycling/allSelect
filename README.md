@@ -1,6 +1,6 @@
 # allselect
 
-> 实现全选的小功能
+> vue：实现一些功能，方法，ps:全选功能
 
 ## Build Setup
 
