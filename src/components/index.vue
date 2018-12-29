@@ -27,7 +27,7 @@
      </ul>
     </van-row>
     <van-row>
-      <div class="indeVue">vue一些功能实现。</div>
+      <div class="indeVue">vue，一些方法功能的实现。</div>
     </van-row> 
     <van-tabbar v-model="active">
       <van-tabbar-item icon="home-o">首页</van-tabbar-item>
