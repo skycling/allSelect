@@ -1,5 +1,11 @@
 <template>
   <div class="projects">
+		<van-nav-bar
+			title=""
+			left-text="返回" 
+			left-arrow
+			@click-left="onClickLeft" 
+		/>
     <div class="content"> 
       <div> 
         <div class="checkbox " @click="letsGetThisFuckingCheck">
@@ -87,6 +93,10 @@ import { room } from '@/api/meeting'
 	    fit(){
 	        flex();
 			}, 
+			// 返回
+			onClickLeft() {
+				this.$router.push('/');
+			},
 			getRoom(){
   			room(this.roomHour).then(res => {
             // console.log(res)
@@ -199,6 +209,7 @@ import { room } from '@/api/meeting'
    .checkbox{
 		width: 100%;
 		height: 0.98rem;
+		line-height: .98rem;
 		background: @white;
 		font-size: 0.32rem;
 		color: #222222; 

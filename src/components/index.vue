@@ -16,7 +16,8 @@
        <li> 
          <router-link  :to='{path:"/allSelect"}'>
            <span><van-icon size="20px" color="#3991e5" name="shop-collect" />全选</span>
-         </router-link></li>
+         </router-link>
+       </li>
        <li><span><van-icon size="20px" color="#3991e5" name="hot" /></span></li>
        <li><span><van-icon size="20px" color="#3991e5" name="gift-card" /></span></li>
        <li><span><van-icon size="20px" color="#3991e5" name="service" /></span></li>
@@ -27,11 +28,11 @@
      </ul>
     </van-row>
     <van-row>
-      <div class="indeVue">vue，一些方法功能的实现。</div>
+      <div class="indeVue">(vue)一些方法功能的实现。</div>
     </van-row> 
     <van-tabbar v-model="active">
-      <van-tabbar-item icon="home-o">首页</van-tabbar-item>
-      <van-tabbar-item icon="fire-o">内容</van-tabbar-item>
+      <van-tabbar-item icon="home-o" to="/">首页</van-tabbar-item>
+      <van-tabbar-item icon="fire-o" to="/allSelect">内容</van-tabbar-item>
       <van-tabbar-item icon="manager-o">我的</van-tabbar-item>
     </van-tabbar>
   </div>
@@ -96,7 +97,8 @@ a{ text-decoration:none;color: #314050;}
           display: block;
           width: 100%;
           height: 100%;
-          border: #cccccc 0.01rem solid; 
+          font-size: .24rem;
+          border: #d1d1d1 0.01rem solid; 
         }
       }
     }
